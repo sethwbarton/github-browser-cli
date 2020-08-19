@@ -1,0 +1,21 @@
+# IDE files
+/.idea/
+.yo-rc.json
+*.kate-swp
+
+# Logs
+/logs/
+*.log
+
+# Runtime data
+/pids/
+*.pid
+*.seed
+
+# dependencies
+/node_modules/
+
+# environment variables
+/.env/
+/env/
+/.lock-wscript/
