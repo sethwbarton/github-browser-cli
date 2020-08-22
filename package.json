@@ -9,7 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@octokit/core": "^3.1.2",
+    "cli-table": "^0.3.1"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^7.1.1",
