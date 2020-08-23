@@ -20,7 +20,7 @@ const startPrompt = function () {
         process.exit(0)
       } else {
         console.log('Invalid choice, try again')
-        exports.startPrompt()
+        startPrompt()
       }
     })
 }
@@ -31,7 +31,7 @@ function lookUpUser () {
       const user = await userLookUp.getUserByUsername(username)
       if (user === 'Not found') {
         console.log("Sorry, that user doesn't exist!")
-        exports.startPrompt()
+        startPrompt()
       } else {
         printer.printUserRepos(user.publicRepos)
         startPrompt()
@@ -45,7 +45,7 @@ function lookUpOrganization () {
       const organization = await orgLookUp.getOrganizationByOrgName(orgName)
       if (organization === 'Not found') {
         console.log("Sorry, that organization doesn't exist!")
-        exports.startPrompt()
+        startPrompt()
       } else {
         printer.printOrganizationMembers(organization.publicMembers)
         startPrompt()
