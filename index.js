@@ -54,6 +54,10 @@ function lookUpOrganization () {
 }
 
 async function main (argv) {
+  if (!argv[2]) {
+    console.log('Please provide a GitHub access token.')
+    process.exit(0)
+  }
   exports.apiKey = argv[2]
   startPrompt()
 }
